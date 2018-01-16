@@ -2,6 +2,7 @@
 This a simple PHP RSS/Atom feed reader with both a PHP interface and a JQuery Mobile interface for mobile devices. Most development happens on the JQM version of the page. 
 
 There are four files that get used to build the JQM version of the page: 
+
 1. feeds.txt - A list of RSS or Atom feeds. One per line, URL only.  
 2. fortunes.txt - A list of sayings, etc, that go at the top of the page. One per line. 
 3. weather.txt - A list of weather sites that builds the weather menu. 
