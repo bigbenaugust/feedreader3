@@ -1,0 +1,3 @@
+NWS,http://mobile.weather.gov/index.php?lat=35.9101438&lon=-79.0752895
+WRAL,http://www.wral.com/weather/
+NHC,http://www.nhc.noaa.gov/

@@ -9,10 +9,6 @@ http://feeds.arstechnica.com/arstechnica/index?format=xml
 http://distrowatch.com/news/dw.xml
 https://lwn.net/headlines/rss
 http://www.theregister.co.uk/headlines.atom
-https://radicalmentoring.com/feed/
-http://www.cmalliance.org/rss/tozer
-http://odb.org/feed/
-http://babylonbee.com/feed/
 http://www.autoblog.com/rss.xml
 http://www.engadget.com/rss.xml
 http://bicycletimesmag.com/feed/

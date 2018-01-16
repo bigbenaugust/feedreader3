@@ -1,12 +1,18 @@
 <?php
-require_once("php/autoloader.php");
+date_default_timezone_set('America/New_York');
+# require_once("php/autoloader.php");
+require '../vendor/autoload.php';
+require("get_random_line.php");
 $feedarray=file("feeds.txt");
 $length = 4;
 $feednumber=count($feedarray);
 $style=file_get_contents("rdf.css");
 $useragent=$_SERVER['HTTP_USER_AGENT'];
-echo "<!DOCTYPE HTML><html><head><title>Usual RSS Feeds</title><link href='http://feedreader-bigbenaugust.apps.unc.edu/favicon.ico' rel='icon' type='image/x-icon' /><style>$style</style></head><body>";
-echo "<div><a href='http://mobile.weather.gov/index.php?lat=35.9101438&lon=-79.0752895' target='_blank'>Carrboro Weather (NWS)</a></div>";
+echo "<!DOCTYPE HTML><html><head><title>Usual RSS Feeds</title><link href='https://feedreader-bigbenaugust.apps.unc.edu/php/favicon.ico' rel='icon' type='image/x-icon' /><style>$style</style></head><body>";
+echo "<div>Weather: <a href='http://mobile.weather.gov/index.php?lat=35.9101438&lon=-79.0752895' target='_blank'>NWS</a> - <a href='http://www.wral.com/weather/' target='_blank'>WRAL</a> - <a href='http://www.nhc.noaa.gov/' target='_blank'>NHC</a> - Last loaded: " . date('r') . " <br> ";
+echo rand_line("fortunes.txt");
+echo " - <a href='fortunes.txt'>list</a>";
+echo "</div>";
 
         if (preg_match('/Android/i', $useragent)) {
                 echo '<br><hr><br>';

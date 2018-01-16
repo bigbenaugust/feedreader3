@@ -1,0 +1,3 @@
+BF,http://bikeforums.net
+BL,https://forums.bunsenlabs.org/search.php?action=show_recent
+RPi,https://www.raspberrypi.org/forums/index.php
